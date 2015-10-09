@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4FEBED1C362D53A1D3AF9197D1CC3F87D2E2E5CB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A4D7DB7936D18F8797892B0805F0623344CBAEBE" : 0,
+    "4FEBED1C362D53A1D3AF9197D1CC3F87D2E2E5CB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "724F9191-EA22-48DE-9565-E0ACFD6CA038",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A4D7DB7936D18F8797892B0805F0623344CBAEBE" : "",
+    "4FEBED1C362D53A1D3AF9197D1CC3F87D2E2E5CB" : "ApplePayDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ApplePayDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ApplePayDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/goodheart\/PMApplePayDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4FEBED1C362D53A1D3AF9197D1CC3F87D2E2E5CB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:goodheart\/firstDemo123.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A4D7DB7936D18F8797892B0805F0623344CBAEBE"
+    }
+  ]
+}

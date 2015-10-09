@@ -9,7 +9,7 @@
 #import <PassKit/PassKit.h>
 #import <StoreKit/StoreKit.h>
 #import "ViewController.h"
-
+#import "UIDevice+PMDevice.h"
 @interface ViewController ()<PKPaymentAuthorizationViewControllerDelegate,SKProductsRequestDelegate,SKPaymentTransactionObserver>
 
 /* Private Method */
@@ -23,8 +23,6 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -40,6 +38,11 @@
 
 //应用内支付
 - (IBAction)IAPAction:(id)sender {
+    
+    if ([[UIDevice currentDevice] isBrokedDevice]) {
+        return;
+    }
+    
     if ([SKPaymentQueue canMakePayments]) {
         NSLog(@"可以进行应用内支付");
         //获取商品信息

@@ -14,6 +14,7 @@
 		365F397C1BC6BDE000D37522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365F397B1BC6BDE000D37522 /* Assets.xcassets */; };
 		365F397F1BC6BDE000D37522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365F397D1BC6BDE000D37522 /* LaunchScreen.storyboard */; };
 		36A005791BC76805002B79B2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A005781BC76805002B79B2 /* StoreKit.framework */; };
+		36A0057F1BC79515002B79B2 /* UIDevice+PMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0057E1BC79515002B79B2 /* UIDevice+PMDevice.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		365F39801BC6BDE000D37522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365F39861BC6BDF700D37522 /* ApplePayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplePayDemo.entitlements; sourceTree = "<group>"; };
 		36A005781BC76805002B79B2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		36A0057D1BC79515002B79B2 /* UIDevice+PMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PMDevice.h"; sourceTree = "<group>"; };
+		36A0057E1BC79515002B79B2 /* UIDevice+PMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PMDevice.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				365F39731BC6BDE000D37522 /* AppDelegate.m */,
 				365F39751BC6BDE000D37522 /* ViewController.h */,
 				365F39761BC6BDE000D37522 /* ViewController.m */,
+				36A0057D1BC79515002B79B2 /* UIDevice+PMDevice.h */,
+				36A0057E1BC79515002B79B2 /* UIDevice+PMDevice.m */,
 				365F39781BC6BDE000D37522 /* Main.storyboard */,
 				365F397B1BC6BDE000D37522 /* Assets.xcassets */,
 				365F397D1BC6BDE000D37522 /* LaunchScreen.storyboard */,
@@ -164,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A0057F1BC79515002B79B2 /* UIDevice+PMDevice.m in Sources */,
 				365F39771BC6BDE000D37522 /* ViewController.m in Sources */,
 				365F39741BC6BDE000D37522 /* AppDelegate.m in Sources */,
 				365F39711BC6BDE000D37522 /* main.m in Sources */,
