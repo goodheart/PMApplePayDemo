@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0l-4I-nZb">
+                                <rect key="frame" x="100" y="95" width="400" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1uo-vJ-MSx"/>
+                                </constraints>
+                                <state key="normal" title="苹果支付"/>
+                                <connections>
+                                    <action selector="applePayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZs-jc-PaA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYP-su-g1y">
+                                <rect key="frame" x="100" y="223" width="400" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="b6I-00-bvL"/>
+                                </constraints>
+                                <state key="normal" title="应用内支付"/>
+                                <connections>
+                                    <action selector="IAPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTF-xi-bcc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x0l-4I-nZb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="HgO-Vc-ll6"/>
+                            <constraint firstItem="DYP-su-g1y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="II8-9I-Zgt"/>
+                            <constraint firstItem="x0l-4I-nZb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aft-8y-l1v"/>
+                            <constraint firstItem="DYP-su-g1y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2:3" id="jpi-aF-OM0"/>
+                            <constraint firstItem="DYP-su-g1y" firstAttribute="top" secondItem="x0l-4I-nZb" secondAttribute="bottom" constant="84" id="kkU-nQ-nhT"/>
+                            <constraint firstItem="x0l-4I-nZb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2:3" id="smB-Rv-RZt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="374"/>
+        </scene>
+    </scenes>
+</document>
