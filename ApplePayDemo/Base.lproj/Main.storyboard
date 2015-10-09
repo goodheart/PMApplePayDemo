@@ -21,6 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0l-4I-nZb">
                                 <rect key="frame" x="100" y="95" width="400" height="44"/>
                                 <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="1uo-vJ-MSx"/>
                                 </constraints>
@@ -32,6 +33,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYP-su-g1y">
                                 <rect key="frame" x="100" y="223" width="400" height="44"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="0.33182639609999998" blue="0.86537124659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="b6I-00-bvL"/>
                                 </constraints>

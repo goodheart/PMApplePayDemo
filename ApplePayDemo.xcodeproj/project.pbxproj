@@ -15,6 +15,8 @@
 		365F397F1BC6BDE000D37522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365F397D1BC6BDE000D37522 /* LaunchScreen.storyboard */; };
 		36A005791BC76805002B79B2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A005781BC76805002B79B2 /* StoreKit.framework */; };
 		36A0057F1BC79515002B79B2 /* UIDevice+PMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0057E1BC79515002B79B2 /* UIDevice+PMDevice.m */; settings = {ASSET_TAGS = (); }; };
+		36A0058E1BC80535002B79B2 /* PMSimpleTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0058B1BC80535002B79B2 /* PMSimpleTransaction.m */; settings = {ASSET_TAGS = (); }; };
+		36A0058F1BC80535002B79B2 /* PMTransactionExceptionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0058D1BC80535002B79B2 /* PMTransactionExceptionMonitor.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		36A005781BC76805002B79B2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		36A0057D1BC79515002B79B2 /* UIDevice+PMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PMDevice.h"; sourceTree = "<group>"; };
 		36A0057E1BC79515002B79B2 /* UIDevice+PMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PMDevice.m"; sourceTree = "<group>"; };
+		36A0058A1BC80535002B79B2 /* PMSimpleTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMSimpleTransaction.h; sourceTree = "<group>"; };
+		36A0058B1BC80535002B79B2 /* PMSimpleTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMSimpleTransaction.m; sourceTree = "<group>"; };
+		36A0058C1BC80535002B79B2 /* PMTransactionExceptionMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTransactionExceptionMonitor.h; sourceTree = "<group>"; };
+		36A0058D1BC80535002B79B2 /* PMTransactionExceptionMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMTransactionExceptionMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		365F396E1BC6BDE000D37522 /* ApplePayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				36A005801BC79D9A002B79B2 /* NetworkCache */,
 				365F39861BC6BDF700D37522 /* ApplePayDemo.entitlements */,
 				365F39721BC6BDE000D37522 /* AppDelegate.h */,
 				365F39731BC6BDE000D37522 /* AppDelegate.m */,
@@ -88,6 +95,17 @@
 				365F39701BC6BDE000D37522 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36A005801BC79D9A002B79B2 /* NetworkCache */ = {
+			isa = PBXGroup;
+			children = (
+				36A0058A1BC80535002B79B2 /* PMSimpleTransaction.h */,
+				36A0058B1BC80535002B79B2 /* PMSimpleTransaction.m */,
+				36A0058C1BC80535002B79B2 /* PMTransactionExceptionMonitor.h */,
+				36A0058D1BC80535002B79B2 /* PMTransactionExceptionMonitor.m */,
+			);
+			path = NetworkCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +188,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A0057F1BC79515002B79B2 /* UIDevice+PMDevice.m in Sources */,
+				36A0058E1BC80535002B79B2 /* PMSimpleTransaction.m in Sources */,
+				36A0058F1BC80535002B79B2 /* PMTransactionExceptionMonitor.m in Sources */,
 				365F39771BC6BDE000D37522 /* ViewController.m in Sources */,
 				365F39741BC6BDE000D37522 /* AppDelegate.m in Sources */,
 				365F39711BC6BDE000D37522 /* main.m in Sources */,

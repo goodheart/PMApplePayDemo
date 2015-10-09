@@ -10,7 +10,11 @@
 #import <StoreKit/StoreKit.h>
 #import "ViewController.h"
 #import "UIDevice+PMDevice.h"
+
 @interface ViewController ()<PKPaymentAuthorizationViewControllerDelegate,SKProductsRequestDelegate,SKPaymentTransactionObserver>
+
+@property (nonatomic,strong) NSOperationQueue * operationQueue;
+@property (nonatomic,copy) NSString * networkCacheDirecotry;
 
 /* Private Method */
 - (void)getProductInfo;
@@ -23,6 +27,22 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString * cacheDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    NSString * networkCacheDirectory = [cacheDirectory stringByAppendingPathComponent:@"com.haoyi.webNetwork.cache"];
+    self.networkCacheDirecotry = networkCacheDirectory;
+    BOOL isDirectory = YES;
+    if (NO == [[NSFileManager defaultManager] fileExistsAtPath:networkCacheDirectory isDirectory:&isDirectory]) {
+        [[NSFileManager defaultManager] createDirectoryAtPath:networkCacheDirectory
+                                  withIntermediateDirectories:YES
+                                                   attributes:nil
+                                                        error:nil];
+    }
+    
+    self.operationQueue = [[NSOperationQueue alloc] init];
+    self.operationQueue.maxConcurrentOperationCount = 6;
+    
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -39,6 +59,7 @@
 //应用内支付
 - (IBAction)IAPAction:(id)sender {
     
+
     if ([[UIDevice currentDevice] isBrokedDevice]) {
         return;
     }
@@ -200,6 +221,8 @@
             amount:[NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%d",arc4random() % 100]]];
     completion(@[total]);
 }
+
+
 
 
 
